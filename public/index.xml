@@ -9,10 +9,10 @@
     <atom:link href="http://localhost:1313/myblog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:1313/myblog/docs/furniture/</link>
+      <link>http://localhost:1313/myblog/docs/%E6%95%B0%E5%AD%97%E8%90%A5%E9%94%80/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/myblog/docs/furniture/</guid>
-      <description>&lt;p&gt;家具指南&lt;/p&gt;</description>
+      <guid>http://localhost:1313/myblog/docs/%E6%95%B0%E5%AD%97%E8%90%A5%E9%94%80/</guid>
+      <description>&lt;p&gt;数字营销的渠道或组成部分:&lt;/p&gt;&#xA;&lt;p&gt;搜索引擎优化SEO&lt;/p&gt;&#xA;&lt;p&gt;点击付费PPC&lt;/p&gt;&#xA;&lt;p&gt;内容营销&lt;/p&gt;&#xA;&lt;p&gt;社交媒体营销&lt;/p&gt;&#xA;&lt;p&gt;电子邮件营销&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
