@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head><script src="/myblog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=myblog/livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="什么是Git？
+Git是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。
+什么是Github？
+GitHub是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管
+简单理解Git：
+当玩单机游戏时，保存游戏，并且读取存档时能读取不同时间各个存档
+简单理解Github：
+当玩完steam游戏后，游戏存档会上传到steam云存档
+本地库初始化
+git init执行完此命令后会在本地工作区生成一个.git文件夹。里面存放着是本地库相关的子目录和文件，不要删除，也不要胡乱修改。
+执行完此命令后会在本地工作区生成一个.git文件夹。里面存放着是本地库相关的子目录和文件，不要删除，也不要胡乱修改。
+设置签名（第一次必须在终端运行）
+git config user.name &#39;qwamvcpu&#39; git config user.email &#39;c15940908593@163.com&#39;状态查看
+git status #查看工作区、暂存区状态添加
+git add [file name] #将工作区的“新建/修改”添加到暂存区提交
+git commit -m &#34;commit message&#34; [file name] #将暂存区的内容提交到本地库查看历史记录（时间）
+git log #查看版本历史记录（方式一） git log --pretty=oneline #查看版本历史记录（方式二） git log --oneline #查看版本历史记录（方式三） git reflog #查看版本历史记录（方式四）本地库与远程库建立连接
+# 查看仓库 git remote -v# 删除远程仓库 git remote rm gitee git remote rm github">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2e3440">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/myblog/docs/git%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">
+  <meta property="og:site_name" content="qwamv的个人博客">
+  <meta property="og:title" content="qwamv的个人博客">
+  <meta property="og:description" content="什么是Git？
+Git是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。
+什么是Github？
+GitHub是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管
+简单理解Git：
+当玩单机游戏时，保存游戏，并且读取存档时能读取不同时间各个存档
+简单理解Github：
+当玩完steam游戏后，游戏存档会上传到steam云存档
+本地库初始化
+git init执行完此命令后会在本地工作区生成一个.git文件夹。里面存放着是本地库相关的子目录和文件，不要删除，也不要胡乱修改。
+执行完此命令后会在本地工作区生成一个.git文件夹。里面存放着是本地库相关的子目录和文件，不要删除，也不要胡乱修改。
+设置签名（第一次必须在终端运行）
+git config user.name &#39;qwamvcpu&#39; git config user.email &#39;c15940908593@163.com&#39;状态查看
+git status #查看工作区、暂存区状态添加
+git add [file name] #将工作区的“新建/修改”添加到暂存区提交
+git commit -m &#34;commit message&#34; [file name] #将暂存区的内容提交到本地库查看历史记录（时间）
+git log #查看版本历史记录（方式一） git log --pretty=oneline #查看版本历史记录（方式二） git log --oneline #查看版本历史记录（方式三） git reflog #查看版本历史记录（方式四）本地库与远程库建立连接
+# 查看仓库 git remote -v# 删除远程仓库 git remote rm gitee git remote rm github">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+
+
+  <meta itemprop="name" content="qwamv的个人博客">
+  <meta itemprop="description" content="什么是Git？
+Git是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。
+什么是Github？
+GitHub是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管
+简单理解Git：
+当玩单机游戏时，保存游戏，并且读取存档时能读取不同时间各个存档
+简单理解Github：
+当玩完steam游戏后，游戏存档会上传到steam云存档
+本地库初始化
+git init执行完此命令后会在本地工作区生成一个.git文件夹。里面存放着是本地库相关的子目录和文件，不要删除，也不要胡乱修改。
+执行完此命令后会在本地工作区生成一个.git文件夹。里面存放着是本地库相关的子目录和文件，不要删除，也不要胡乱修改。
+设置签名（第一次必须在终端运行）
+git config user.name &#39;qwamvcpu&#39; git config user.email &#39;c15940908593@163.com&#39;状态查看
+git status #查看工作区、暂存区状态添加
+git add [file name] #将工作区的“新建/修改”添加到暂存区提交
+git commit -m &#34;commit message&#34; [file name] #将暂存区的内容提交到本地库查看历史记录（时间）
+git log #查看版本历史记录（方式一） git log --pretty=oneline #查看版本历史记录（方式二） git log --oneline #查看版本历史记录（方式三） git reflog #查看版本历史记录（方式四）本地库与远程库建立连接
+# 查看仓库 git remote -v# 删除远程仓库 git remote rm gitee git remote rm github">
+  <meta itemprop="wordCount" content="66">
+
+<title>Git使用指南 | qwamv的个人博客</title>
+<link rel="icon" href="/myblog/favicon.png" >
+<link rel="manifest" href="/myblog/manifest.json">
+<link rel="canonical" href="http://localhost:1313/myblog/docs/git%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">
+<link rel="stylesheet" href="/myblog/book.min.4d6d5ad3b0ae85d2a15b20ab217863f70db543e46314629e239ced759e674898.css" integrity="sha256-TW1a07CuhdKhWyCrIXhj9w21Q&#43;RjFGKeI5ztdZ5nSJg=" crossorigin="anonymous">
+
+
+  <script defer src="/myblog/fuse.min.js"></script>
+  <script defer src="/myblog/zh.search.min.3ced874e1aa7f37f09876494c6e336bcb304f08da73df0da3575958184041d09.js" integrity="sha256-PO2HThqn838Jh2SUxuM2vLME8I2nPfDaNXWVgYQEHQk=" crossorigin="anonymous"></script>
+
+
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/myblog/"><span>qwamv的个人博客</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="搜索"
+    aria-label="搜索"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/git%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" class="active">
+      Git使用指南</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/semrush%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8/" class="">
+      Semrush如何使用</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/seo-%E4%B8%8E-sem%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB/" class="">
+      Seo 与 Sem：有什么区别？</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/%E5%A6%82%E4%BD%95%E8%87%AA%E5%B7%B1%E8%83%BD%E7%8B%AC%E7%AB%8B%E5%AE%8C%E6%88%90%E4%B8%80%E4%B8%AA%E7%BD%91%E7%AB%99/" class="">
+      如何自己能独立完成一个网站</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/%E6%95%B0%E5%AD%97%E8%90%A5%E9%94%80/" class="">
+      数字营销</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/%E7%8B%AC%E7%AB%8B%E7%AB%99%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" class="">
+      独立站基础知识</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/" class="">
+      计算机知识</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" class="">
+      读书笔记</a>
+  
+
+        </li>
+      
+    
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/myblog/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Git使用指南</h3>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><p>什么是Git？</p>
+<p>Git是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。</p>
+<p>什么是Github？</p>
+<p>GitHub是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管</p>
+<p>简单理解Git：</p>
+<p>当玩单机游戏时，保存游戏，并且读取存档时能读取不同时间各个存档</p>
+<p>简单理解Github：</p>
+<p>当玩完steam游戏后，游戏存档会上传到steam云存档</p>
+<p><strong>本地库初始化</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>git init</span></span></code></pre></div><p>执行完此命令后会在本地工作区生成一个.git文件夹。里面存放着是本地库相关的子目录和文件，不要删除，也不要胡乱修改。</p>
+<p>执行完此命令后会在本地工作区生成一个.git文件夹。里面存放着是本地库相关的子目录和文件，不要删除，也不要胡乱修改。</p>
+<p><strong>设置签名（第一次必须在终端运行）</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>git config  user.name &#39;qwamvcpu&#39;
+</span></span><span style="display:flex;"><span>git config  user.email &#39;c15940908593@163.com&#39;</span></span></code></pre></div><p><strong>状态查看</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>git status #查看工作区、暂存区状态</span></span></code></pre></div><p>添加</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>git add [file name] #将工作区的“新建/修改”添加到暂存区</span></span></code></pre></div><p>提交</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>git commit -m &#34;commit message&#34; [file name]  #将暂存区的内容提交到本地库</span></span></code></pre></div><p>查看历史记录（时间）</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>git log                    #查看版本历史记录（方式一）
+</span></span><span style="display:flex;"><span>git log --pretty=oneline   #查看版本历史记录（方式二）
+</span></span><span style="display:flex;"><span>git log --oneline          #查看版本历史记录（方式三）
+</span></span><span style="display:flex;"><span>git reflog                 #查看版本历史记录（方式四）</span></span></code></pre></div><p><strong>本地库与远程库建立连接</strong></p>
+<pre tabindex="0"><code># 查看仓库
+git remote -v</code></pre><pre tabindex="0"><code># 删除远程仓库
+git remote rm gitee
+git remote rm github</code></pre></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+<div>
+
+</div>
+
+<div>
+
+</div>
+
+</div>
+
+
+
+
+
+  
+  
+  
+  <div class="flex flex-wrap justify-between">
+    <span>
+    
+    </span>
+    <span>
+    
+      <a href="/myblog/docs/semrush%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8/" class="flex align-center">
+        <span>Semrush如何使用</span>
+        <img src="/myblog/icons/forward.svg" class="book-icon" alt="Forward" />
+      </a>
+    
+    </span>
+  </div>
+  
+
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
