@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/计算机知识.md",
+                "file": "docs/Obsidian + Hugo + GithubPages 本地部署完整教程.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "计算机知识"
+              "title": "Obsidian + Hugo + GithubPages 本地部署完整教程"
             }
           }
         ]
@@ -186,17 +186,18 @@
   "active": "4f10cfdb71ff4ffa",
   "lastOpenFiles": [
     "_index.md",
+    "docs/Obsidian + Hugo + GithubPages 本地部署完整教程.md",
+    "docs/独立站基础知识.md",
+    "docs/软件工具.md",
     "docs/Git使用指南.md",
+    "docs/Semrush如何使用.md",
+    "docs/SEO 与 SEM：有什么区别？.md",
     "docs/数字营销.md",
     "docs/计算机知识.md",
-    "docs/SEO 与 SEM：有什么区别？.md",
-    "docs/Semrush如何使用.md",
-    "docs/独立站基础知识.md",
     "docs/读书笔记.md",
-    "Pasted image 20260323164551.png",
-    "docs/软件工具.md",
-    "未命名.md",
     "docs/如何自己能独立完成一个网站.md",
+    "Pasted image 20260323164551.png",
+    "未命名.md",
     "docs/furniture.md",
     "docs/furniture 1.md",
     "docs"
