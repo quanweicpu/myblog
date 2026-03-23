@@ -1,0 +1,12 @@
+baseURL = 'http://localhost:1313/'
+title = 'qwamv的个人博客'
+theme = 'hugo-book'
+enableGitInfo = false
+
+defaultContentLanguage = 'zh'
+
+[languages]
+  [languages.zh]
+    languageName = 'Chinese'
+    contentDir = 'content.zh'
+    weight = 1
