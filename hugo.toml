@@ -1,4 +1,4 @@
-baseURL = 'http://localhost:1313/'
+baseURL = "https://quanweicpu.github.io/myblog/"
 title = 'qwamv的个人博客'
 theme = 'hugo-book'
 enableGitInfo = false

@@ -1,14 +1,14 @@
 {
   "name": "qwamv的个人博客",
   "short_name": "qwamv的个人博客",
-  "start_url": "/",
-  "scope": "/",
+  "start_url": "/myblog/",
+  "scope": "/myblog/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "/favicon.svg",
+      "src": "/myblog/favicon.svg",
       "sizes": "512x512"
     }
   ]
