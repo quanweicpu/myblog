@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/计算机知识.md",
+                "file": "docs/读书笔记.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "计算机知识"
+              "title": "读书笔记"
             }
           }
         ]
@@ -186,18 +186,18 @@
   "active": "4f10cfdb71ff4ffa",
   "lastOpenFiles": [
     "docs/纳瓦尔宝典.md",
+    "docs/读书笔记.md",
+    "_index.md",
+    "docs/定投十年财务自由.md",
+    "docs/计算机知识.md",
     "docs/软件工具.md",
     "docs/Git使用指南.md",
     "docs/Semrush如何使用.md",
-    "docs/定投十年财务自由.md",
-    "docs/读书笔记.md",
     "docs/数字营销.md",
     "docs/Obsidian + Hugo + GithubPages 本地部署完整教程.md",
     "docs/SEO 与 SEM：有什么区别？.md",
-    "_index.md",
     "docs/读书笔记",
     "docs/独立站基础知识.md",
-    "docs/计算机知识.md",
     "docs/如何自己能独立完成一个网站.md",
     "Pasted image 20260323164551.png",
     "未命名.md",

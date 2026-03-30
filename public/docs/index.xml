@@ -79,6 +79,13 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/myblog/docs/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/myblog/docs/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
+      <description>&lt;p&gt;以下是按书记录的读书笔记&lt;/p&gt;&#xA;&lt;p&gt;[[纳瓦尔宝典]]&lt;/p&gt;&#xA;&lt;p&gt;[[定投十年财务自由]]&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/myblog/docs/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/myblog/docs/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/</guid>
