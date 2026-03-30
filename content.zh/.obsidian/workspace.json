@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Obsidian + Hugo + GithubPages 本地部署完整教程.md",
+                "file": "docs/读书笔记.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Obsidian + Hugo + GithubPages 本地部署完整教程"
+              "title": "读书笔记"
             }
           }
         ]
@@ -185,18 +185,18 @@
   },
   "active": "6147365b0e8986ee",
   "lastOpenFiles": [
-    "docs/读书笔记.md",
-    "docs/Obsidian + Hugo + GithubPages 本地部署完整教程.md",
-    "docs/Semrush如何使用.md",
-    "docs/读书笔记/纳瓦尔宝典.md",
     "_index.md",
+    "docs/SEO 与 SEM：有什么区别？.md",
+    "docs/读书笔记.md",
+    "docs/软件工具.md",
+    "docs/Semrush如何使用.md",
+    "docs/Obsidian + Hugo + GithubPages 本地部署完整教程.md",
+    "docs/读书笔记/纳瓦尔宝典.md",
     "docs/读书笔记",
     "docs/读书笔记/定投十年财务自由.md",
     "docs/计算机知识.md",
-    "docs/软件工具.md",
     "docs/Git使用指南.md",
     "docs/数字营销.md",
-    "docs/SEO 与 SEM：有什么区别？.md",
     "docs/读书笔记",
     "docs/独立站基础知识.md",
     "docs/如何自己能独立完成一个网站.md",
