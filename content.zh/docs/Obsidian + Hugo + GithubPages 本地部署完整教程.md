@@ -126,6 +126,7 @@ theme = "hugo-book"
 
   
 cd D:\blog\myblog
+
 hugo server -D
 
   
@@ -181,7 +182,9 @@ cd D:\blog\myblog
   
 
 git add . 
+
 git commit -m "update content" 
+
 git push origin main
 
   
