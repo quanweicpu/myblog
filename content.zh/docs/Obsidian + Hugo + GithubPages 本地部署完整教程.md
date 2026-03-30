@@ -125,7 +125,7 @@ theme = "hugo-book"
 ## 🌐 6. 本地运行
 
   
-
+cd D:\blog\myblog
 hugo server -D
 
   
@@ -180,10 +180,8 @@ cd D:\blog\myblog
 
   
 
-git add .
-
-git commit -m "update"
-
+git add . 
+git commit -m "update content" 
 git push origin main
 
   
