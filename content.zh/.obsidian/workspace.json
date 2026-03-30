@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Obsidian + Hugo + GithubPages 本地部署完整教程.md",
+                "file": "docs/独立站基础知识/产品页面大纲的写作步骤.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Obsidian + Hugo + GithubPages 本地部署完整教程"
+              "title": "产品页面大纲的写作步骤"
             }
           }
         ]
@@ -185,6 +185,7 @@
   },
   "active": "6147365b0e8986ee",
   "lastOpenFiles": [
+    "docs/Obsidian + Hugo + GithubPages 本地部署完整教程.md",
     "docs/独立站基础知识/产品页面大纲的写作步骤.md",
     "docs/读书笔记/纳瓦尔宝典.md",
     "_index.md",
@@ -198,7 +199,6 @@
     "未命名",
     "docs/SEO 与 SEM：有什么区别？.md",
     "docs/Semrush如何使用.md",
-    "docs/Obsidian + Hugo + GithubPages 本地部署完整教程.md",
     "docs/读书笔记",
     "docs/计算机知识.md",
     "docs/Git使用指南.md",
