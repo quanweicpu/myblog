@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head><script src="/myblog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=myblog/livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="一、前期调研（输入阶段）#1. 搜索意图与用户画像#收集文章主题相关的搜索意图 明确目标读者是谁（B2B / 家长 / 教师 / 采购） 使用AI辅助分析： 用户为什么搜索这个词 用户处于什么决策阶段 👉 提示词方向： 如何用AI收集文章话题的搜索意图和目标读者画像？
+2. 学习该话题所有知识点#系统收集该主题的： 基础知识 延伸知识 行业经验 建立内容认知体系 👉 提示词方向： 如何用AI学习一个话题的所有知识点？
+二、内容策划（结构阶段）#3. 策划文章结构#生成合理的文章大纲（H2 / H3结构） 确保逻辑清晰、层次分明 👉 提示词方向： 如何用AI生成合理的文章结构？
+4. 策划文章标题#不同类型标题： 指南型（Guide） 列表型（Top / Best） 问题型（How / What） 结合关键词优化 👉 提示词方向： 如何用AI生成高点击率文章标题？
+5. 规划文章内容元素#明确文章包含哪些模块： 定义 优势 应用场景 实操建议 案例 FAQ 👉 提示词方向： 如何用AI规划文章内容元素？
+6. 竞品内容分析#收集Google排名靠前的文章 拆解他们的： 内容结构 信息密度 SEO策略 👉 提示词方向： 如何收集竞品文章内容元素，并分析排名因素？
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2e3440">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/myblog/docs/%E7%8B%AC%E7%AB%8B%E7%AB%99%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E6%96%87%E7%AB%A0%E9%A1%B5%E4%BC%98%E5%8C%96%E5%A4%A7%E7%BA%B2/">
+  <meta property="og:site_name" content="qwamv的个人博客">
+  <meta property="og:title" content="qwamv的个人博客">
+  <meta property="og:description" content="一、前期调研（输入阶段）#1. 搜索意图与用户画像#收集文章主题相关的搜索意图 明确目标读者是谁（B2B / 家长 / 教师 / 采购） 使用AI辅助分析： 用户为什么搜索这个词 用户处于什么决策阶段 👉 提示词方向： 如何用AI收集文章话题的搜索意图和目标读者画像？
+2. 学习该话题所有知识点#系统收集该主题的： 基础知识 延伸知识 行业经验 建立内容认知体系 👉 提示词方向： 如何用AI学习一个话题的所有知识点？
+二、内容策划（结构阶段）#3. 策划文章结构#生成合理的文章大纲（H2 / H3结构） 确保逻辑清晰、层次分明 👉 提示词方向： 如何用AI生成合理的文章结构？
+4. 策划文章标题#不同类型标题： 指南型（Guide） 列表型（Top / Best） 问题型（How / What） 结合关键词优化 👉 提示词方向： 如何用AI生成高点击率文章标题？
+5. 规划文章内容元素#明确文章包含哪些模块： 定义 优势 应用场景 实操建议 案例 FAQ 👉 提示词方向： 如何用AI规划文章内容元素？
+6. 竞品内容分析#收集Google排名靠前的文章 拆解他们的： 内容结构 信息密度 SEO策略 👉 提示词方向： 如何收集竞品文章内容元素，并分析排名因素？">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+
+
+  <meta itemprop="name" content="qwamv的个人博客">
+  <meta itemprop="description" content="一、前期调研（输入阶段）#1. 搜索意图与用户画像#收集文章主题相关的搜索意图 明确目标读者是谁（B2B / 家长 / 教师 / 采购） 使用AI辅助分析： 用户为什么搜索这个词 用户处于什么决策阶段 👉 提示词方向： 如何用AI收集文章话题的搜索意图和目标读者画像？
+2. 学习该话题所有知识点#系统收集该主题的： 基础知识 延伸知识 行业经验 建立内容认知体系 👉 提示词方向： 如何用AI学习一个话题的所有知识点？
+二、内容策划（结构阶段）#3. 策划文章结构#生成合理的文章大纲（H2 / H3结构） 确保逻辑清晰、层次分明 👉 提示词方向： 如何用AI生成合理的文章结构？
+4. 策划文章标题#不同类型标题： 指南型（Guide） 列表型（Top / Best） 问题型（How / What） 结合关键词优化 👉 提示词方向： 如何用AI生成高点击率文章标题？
+5. 规划文章内容元素#明确文章包含哪些模块： 定义 优势 应用场景 实操建议 案例 FAQ 👉 提示词方向： 如何用AI规划文章内容元素？
+6. 竞品内容分析#收集Google排名靠前的文章 拆解他们的： 内容结构 信息密度 SEO策略 👉 提示词方向： 如何收集竞品文章内容元素，并分析排名因素？">
+  <meta itemprop="wordCount" content="205">
+
+<title>文章页优化大纲 | qwamv的个人博客</title>
+<link rel="icon" href="/myblog/favicon.png" >
+<link rel="manifest" href="/myblog/manifest.json">
+<link rel="canonical" href="http://localhost:1313/myblog/docs/%E7%8B%AC%E7%AB%8B%E7%AB%99%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E6%96%87%E7%AB%A0%E9%A1%B5%E4%BC%98%E5%8C%96%E5%A4%A7%E7%BA%B2/">
+<link rel="stylesheet" href="/myblog/book.min.4d6d5ad3b0ae85d2a15b20ab217863f70db543e46314629e239ced759e674898.css" integrity="sha256-TW1a07CuhdKhWyCrIXhj9w21Q&#43;RjFGKeI5ztdZ5nSJg=" crossorigin="anonymous">
+
+
+  <script defer src="/myblog/fuse.min.js"></script>
+  <script defer src="/myblog/zh.search.min.aca421cab3e0f21ef6eea8c652c05a3ef6fab8d58090f08a0cf31b74d988b4f4.js" integrity="sha256-rKQhyrPg8h727qjGUsBaPvb6uNWAkPCKDPMbdNmItPQ=" crossorigin="anonymous"></script>
+
+
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/myblog/"><span>qwamv的个人博客</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="搜索"
+    aria-label="搜索"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/git%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" class="">
+      Git使用指南</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/obsidian-&#43;-hugo-&#43;-githubpages-%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%E5%AE%8C%E6%95%B4%E6%95%99%E7%A8%8B/" class="">
+      Obsidian Hugo Github Pages 本地部署完整教程</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/semrush%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8/" class="">
+      Semrush如何使用</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/seo-%E4%B8%8E-sem%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB/" class="">
+      Seo 与 Sem：有什么区别？</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/%E5%A6%82%E4%BD%95%E8%87%AA%E5%B7%B1%E8%83%BD%E7%8B%AC%E7%AB%8B%E5%AE%8C%E6%88%90%E4%B8%80%E4%B8%AA%E7%BD%91%E7%AB%99/" class="">
+      如何自己能独立完成一个网站</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/%E6%95%B0%E5%AD%97%E8%90%A5%E9%94%80/" class="">
+      数字营销</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/%E7%8B%AC%E7%AB%8B%E7%AB%99%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" class="">
+      独立站基础知识</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/%E7%8B%AC%E7%AB%8B%E7%AB%99%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E4%BA%A7%E5%93%81%E9%A1%B5%E9%9D%A2%E5%A4%A7%E7%BA%B2%E7%9A%84%E5%86%99%E4%BD%9C%E6%AD%A5%E9%AA%A4/" class="">
+      产品页面大纲的写作步骤</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/%E7%8B%AC%E7%AB%8B%E7%AB%99%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E6%96%87%E7%AB%A0%E9%A1%B5%E4%BC%98%E5%8C%96%E5%A4%A7%E7%BA%B2/" class="active">
+      文章页优化大纲</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/" class="">
+      计算机知识</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" class="">
+      读书笔记</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E5%AE%9A%E6%8A%95%E5%8D%81%E5%B9%B4%E8%B4%A2%E5%8A%A1%E8%87%AA%E7%94%B1/" class="">
+      定投十年财务自由</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%BA%B3%E7%93%A6%E5%B0%94%E5%AE%9D%E5%85%B8/" class="">
+      纳瓦尔宝典</a>
+  
+
+        </li>
+      
+    
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/myblog/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>文章页优化大纲</h3>
+
+  <label for="toc-control">
+    
+    <img src="/myblog/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#一前期调研输入阶段">一、前期调研（输入阶段）</a>
+      <ul>
+        <li><a href="#1-搜索意图与用户画像">1. 搜索意图与用户画像</a></li>
+        <li><a href="#2-学习该话题所有知识点">2. 学习该话题所有知识点</a></li>
+      </ul>
+    </li>
+    <li><a href="#二内容策划结构阶段">二、内容策划（结构阶段）</a>
+      <ul>
+        <li><a href="#3-策划文章结构">3. 策划文章结构</a></li>
+        <li><a href="#4-策划文章标题">4. 策划文章标题</a></li>
+        <li><a href="#5-规划文章内容元素">5. 规划文章内容元素</a></li>
+        <li><a href="#6-竞品内容分析">6. 竞品内容分析</a></li>
+        <li><a href="#7-生成文章大纲升级版">7. 生成文章大纲（升级版）</a></li>
+      </ul>
+    </li>
+    <li><a href="#三内容写作输出阶段">三、内容写作（输出阶段）</a>
+      <ul>
+        <li><a href="#8-写文章开头极其重要">8. 写文章开头（极其重要）</a></li>
+        <li><a href="#9-写文章正文">9. 写文章正文</a></li>
+        <li><a href="#10-写faq10个以上">10. 写FAQ（10个以上）</a></li>
+        <li><a href="#11-写结尾final-thoughts">11. 写结尾（Final Thoughts）</a></li>
+      </ul>
+    </li>
+    <li><a href="#四seo优化强化阶段">四、SEO优化（强化阶段）</a>
+      <ul>
+        <li><a href="#12-布局长尾关键词">12. 布局长尾关键词</a></li>
+        <li><a href="#13-提升文章专业度与ai可见性">13. 提升文章专业度与AI可见性</a></li>
+        <li><a href="#14-内部链接布局">14. 内部链接布局</a></li>
+      </ul>
+    </li>
+    <li><a href="#五发布与优化落地阶段">五、发布与优化（落地阶段）</a>
+      <ul>
+        <li><a href="#15-wordpress发布">15. WordPress发布</a></li>
+        <li><a href="#16-配图与视觉优化">16. 配图与视觉优化</a></li>
+        <li><a href="#17-外链与权威性">17. 外链与权威性</a></li>
+        <li><a href="#18-发布前检查checklist">18. 发布前检查（Checklist）</a></li>
+      </ul>
+    </li>
+    <li><a href="#六最终目标">六、最终目标</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h2 id="一前期调研输入阶段">一、前期调研（输入阶段）<a class="anchor" href="#%e4%b8%80%e5%89%8d%e6%9c%9f%e8%b0%83%e7%a0%94%e8%be%93%e5%85%a5%e9%98%b6%e6%ae%b5">#</a></h2>
+<h3 id="1-搜索意图与用户画像">1. 搜索意图与用户画像<a class="anchor" href="#1-%e6%90%9c%e7%b4%a2%e6%84%8f%e5%9b%be%e4%b8%8e%e7%94%a8%e6%88%b7%e7%94%bb%e5%83%8f">#</a></h3>
+<ul>
+<li>收集文章主题相关的搜索意图</li>
+<li>明确目标读者是谁（B2B / 家长 / 教师 / 采购）</li>
+<li>使用AI辅助分析：
+<ul>
+<li>用户为什么搜索这个词</li>
+<li>用户处于什么决策阶段</li>
+</ul>
+</li>
+</ul>
+<p>👉 提示词方向：
+如何用AI收集文章话题的搜索意图和目标读者画像？</p>
+<hr>
+<h3 id="2-学习该话题所有知识点">2. 学习该话题所有知识点<a class="anchor" href="#2-%e5%ad%a6%e4%b9%a0%e8%af%a5%e8%af%9d%e9%a2%98%e6%89%80%e6%9c%89%e7%9f%a5%e8%af%86%e7%82%b9">#</a></h3>
+<ul>
+<li>系统收集该主题的：
+<ul>
+<li>基础知识</li>
+<li>延伸知识</li>
+<li>行业经验</li>
+</ul>
+</li>
+<li>建立内容认知体系</li>
+</ul>
+<p>👉 提示词方向：
+如何用AI学习一个话题的所有知识点？</p>
+<hr>
+<h2 id="二内容策划结构阶段">二、内容策划（结构阶段）<a class="anchor" href="#%e4%ba%8c%e5%86%85%e5%ae%b9%e7%ad%96%e5%88%92%e7%bb%93%e6%9e%84%e9%98%b6%e6%ae%b5">#</a></h2>
+<h3 id="3-策划文章结构">3. 策划文章结构<a class="anchor" href="#3-%e7%ad%96%e5%88%92%e6%96%87%e7%ab%a0%e7%bb%93%e6%9e%84">#</a></h3>
+<ul>
+<li>生成合理的文章大纲（H2 / H3结构）</li>
+<li>确保逻辑清晰、层次分明</li>
+</ul>
+<p>👉 提示词方向：
+如何用AI生成合理的文章结构？</p>
+<hr>
+<h3 id="4-策划文章标题">4. 策划文章标题<a class="anchor" href="#4-%e7%ad%96%e5%88%92%e6%96%87%e7%ab%a0%e6%a0%87%e9%a2%98">#</a></h3>
+<ul>
+<li>不同类型标题：
+<ul>
+<li>指南型（Guide）</li>
+<li>列表型（Top / Best）</li>
+<li>问题型（How / What）</li>
+</ul>
+</li>
+<li>结合关键词优化</li>
+</ul>
+<p>👉 提示词方向：
+如何用AI生成高点击率文章标题？</p>
+<hr>
+<h3 id="5-规划文章内容元素">5. 规划文章内容元素<a class="anchor" href="#5-%e8%a7%84%e5%88%92%e6%96%87%e7%ab%a0%e5%86%85%e5%ae%b9%e5%85%83%e7%b4%a0">#</a></h3>
+<ul>
+<li>明确文章包含哪些模块：
+<ul>
+<li>定义</li>
+<li>优势</li>
+<li>应用场景</li>
+<li>实操建议</li>
+<li>案例</li>
+<li>FAQ</li>
+</ul>
+</li>
+</ul>
+<p>👉 提示词方向：
+如何用AI规划文章内容元素？</p>
+<hr>
+<h3 id="6-竞品内容分析">6. 竞品内容分析<a class="anchor" href="#6-%e7%ab%9e%e5%93%81%e5%86%85%e5%ae%b9%e5%88%86%e6%9e%90">#</a></h3>
+<ul>
+<li>收集Google排名靠前的文章</li>
+<li>拆解他们的：
+<ul>
+<li>内容结构</li>
+<li>信息密度</li>
+<li>SEO策略</li>
+</ul>
+</li>
+</ul>
+<p>👉 提示词方向：
+如何收集竞品文章内容元素，并分析排名因素？</p>
+<hr>
+<h3 id="7-生成文章大纲升级版">7. 生成文章大纲（升级版）<a class="anchor" href="#7-%e7%94%9f%e6%88%90%e6%96%87%e7%ab%a0%e5%a4%a7%e7%ba%b2%e5%8d%87%e7%ba%a7%e7%89%88">#</a></h3>
+<ul>
+<li>融合：
+<ul>
+<li>用户意图</li>
+<li>竞品结构</li>
+<li>自身差异化</li>
+</ul>
+</li>
+</ul>
+<p>👉 提示词方向：
+如何结合AI策划高质量文章大纲？</p>
+<hr>
+<h2 id="三内容写作输出阶段">三、内容写作（输出阶段）<a class="anchor" href="#%e4%b8%89%e5%86%85%e5%ae%b9%e5%86%99%e4%bd%9c%e8%be%93%e5%87%ba%e9%98%b6%e6%ae%b5">#</a></h2>
+<h3 id="8-写文章开头极其重要">8. 写文章开头（极其重要）<a class="anchor" href="#8-%e5%86%99%e6%96%87%e7%ab%a0%e5%bc%80%e5%a4%b4%e6%9e%81%e5%85%b6%e9%87%8d%e8%a6%81">#</a></h3>
+<ul>
+<li>直接切中：
+<ul>
+<li>用户需求</li>
+<li>使用场景</li>
+<li>商业背景</li>
+</ul>
+</li>
+</ul>
+<p>👉 提示词方向：
+如何用AI写出高质量文章开头？</p>
+<hr>
+<h3 id="9-写文章正文">9. 写文章正文<a class="anchor" href="#9-%e5%86%99%e6%96%87%e7%ab%a0%e6%ad%a3%e6%96%87">#</a></h3>
+<ul>
+<li>按模块逐步展开</li>
+<li>避免空话，提高信息密度</li>
+<li>强调：
+<ul>
+<li>可执行建议</li>
+<li>实际经验</li>
+</ul>
+</li>
+</ul>
+<p>👉 思考点：</p>
+<ul>
+<li>写给谁？（新手 / 专业 / 采购）</li>
+<li>是否解决实际问题？</li>
+</ul>
+<hr>
+<h3 id="10-写faq10个以上">10. 写FAQ（10个以上）<a class="anchor" href="#10-%e5%86%99faq10%e4%b8%aa%e4%bb%a5%e4%b8%8a">#</a></h3>
+<ul>
+<li>覆盖：
+<ul>
+<li>搜索问题</li>
+<li>转化问题</li>
+</ul>
+</li>
+<li>部分问题用于引导成交</li>
+</ul>
+<p>👉 提示词方向：
+如何生成同时适用于SEO + AI Search + 转化的FAQ？</p>
+<hr>
+<h3 id="11-写结尾final-thoughts">11. 写结尾（Final Thoughts）<a class="anchor" href="#11-%e5%86%99%e7%bb%93%e5%b0%befinal-thoughts">#</a></h3>
+<ul>
+<li>总结核心价值</li>
+<li>引导行动（CTA）</li>
+</ul>
+<p>👉 提示词方向：
+如何通过文章结尾提升转化率？</p>
+<hr>
+<h2 id="四seo优化强化阶段">四、SEO优化（强化阶段）<a class="anchor" href="#%e5%9b%9bseo%e4%bc%98%e5%8c%96%e5%bc%ba%e5%8c%96%e9%98%b6%e6%ae%b5">#</a></h2>
+<h3 id="12-布局长尾关键词">12. 布局长尾关键词<a class="anchor" href="#12-%e5%b8%83%e5%b1%80%e9%95%bf%e5%b0%be%e5%85%b3%e9%94%ae%e8%af%8d">#</a></h3>
+<ul>
+<li>收集相关关键词</li>
+<li>分布在：
+<ul>
+<li>标题</li>
+<li>H2</li>
+<li>正文</li>
+</ul>
+</li>
+</ul>
+<p>👉 提示词方向：
+如何收集并布局长尾关键词？</p>
+<hr>
+<h3 id="13-提升文章专业度与ai可见性">13. 提升文章专业度与AI可见性<a class="anchor" href="#13-%e6%8f%90%e5%8d%87%e6%96%87%e7%ab%a0%e4%b8%93%e4%b8%9a%e5%ba%a6%e4%b8%8eai%e5%8f%af%e8%a7%81%e6%80%a7">#</a></h3>
+<ul>
+<li>强化：
+<ul>
+<li>专业表达</li>
+<li>结构清晰度</li>
+<li>信息权威性</li>
+</ul>
+</li>
+</ul>
+<p>👉 提示词方向：
+如何通过AI提升文章：</p>
+<ul>
+<li>专业度</li>
+<li>Google SEO排名</li>
+<li>AI Search曝光</li>
+<li>转化率</li>
+</ul>
+<hr>
+<h3 id="14-内部链接布局">14. 内部链接布局<a class="anchor" href="#14-%e5%86%85%e9%83%a8%e9%93%be%e6%8e%a5%e5%b8%83%e5%b1%80">#</a></h3>
+<ul>
+<li>添加相关页面链接</li>
+<li>提升：
+<ul>
+<li>SEO权重</li>
+<li>用户停留时间</li>
+</ul>
+</li>
+</ul>
+<p>👉 提示词方向：
+如何设计文章内部链接结构？</p>
+<hr>
+<h2 id="五发布与优化落地阶段">五、发布与优化（落地阶段）<a class="anchor" href="#%e4%ba%94%e5%8f%91%e5%b8%83%e4%b8%8e%e4%bc%98%e5%8c%96%e8%90%bd%e5%9c%b0%e9%98%b6%e6%ae%b5">#</a></h2>
+<h3 id="15-wordpress发布">15. WordPress发布<a class="anchor" href="#15-wordpress%e5%8f%91%e5%b8%83">#</a></h3>
+<ul>
+<li>排版优化</li>
+<li>模块结构清晰</li>
+<li>图片+文字搭配</li>
+</ul>
+<hr>
+<h3 id="16-配图与视觉优化">16. 配图与视觉优化<a class="anchor" href="#16-%e9%85%8d%e5%9b%be%e4%b8%8e%e8%a7%86%e8%a7%89%e4%bc%98%e5%8c%96">#</a></h3>
+<ul>
+<li>选择合适图片</li>
+<li>提高点击率与停留时间</li>
+</ul>
+<p>👉 提示词方向：
+如何选择文章配图以提高SEO与用户体验？</p>
+<hr>
+<h3 id="17-外链与权威性">17. 外链与权威性<a class="anchor" href="#17-%e5%a4%96%e9%93%be%e4%b8%8e%e6%9d%83%e5%a8%81%e6%80%a7">#</a></h3>
+<ul>
+<li>添加高质量外链</li>
+<li>提升可信度</li>
+</ul>
+<p>👉 提示词方向：
+如何选择高质量外链提升SEO？</p>
+<hr>
+<h3 id="18-发布前检查checklist">18. 发布前检查（Checklist）<a class="anchor" href="#18-%e5%8f%91%e5%b8%83%e5%89%8d%e6%a3%80%e6%9f%a5checklist">#</a></h3>
+<ul>
+<li>标题是否优化</li>
+<li>关键词是否覆盖</li>
+<li>内容是否有深度</li>
+<li>是否解决用户问题</li>
+<li>是否具备转化引导</li>
+</ul>
+<p>👉 提示词方向：
+文章发布前检查清单怎么做？</p>
+<hr>
+<h2 id="六最终目标">六、最终目标<a class="anchor" href="#%e5%85%ad%e6%9c%80%e7%bb%88%e7%9b%ae%e6%a0%87">#</a></h2>
+<p>通过这套流程，实现：</p>
+<ul>
+<li>SEO排名提升</li>
+<li>AI Search曝光提升</li>
+<li>内容专业度提升</li>
+<li>页面转化能力提升</li>
+</ul>
+<p>👉 核心逻辑：
+不是写文章，而是 <strong>用内容获取客户</strong></p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+<div>
+
+</div>
+
+<div>
+
+</div>
+
+</div>
+
+
+
+
+
+  
+  
+  
+  <div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/myblog/docs/%E7%8B%AC%E7%AB%8B%E7%AB%99%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E4%BA%A7%E5%93%81%E9%A1%B5%E9%9D%A2%E5%A4%A7%E7%BA%B2%E7%9A%84%E5%86%99%E4%BD%9C%E6%AD%A5%E9%AA%A4/" class="flex align-center">
+        <img src="/myblog/icons/backward.svg" class="book-icon" alt="Backward" />
+        <span>产品页面大纲的写作步骤</span>
+      </a>
+    
+    </span>
+    <span>
+    
+      <a href="/myblog/docs/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/" class="flex align-center">
+        <span>计算机知识</span>
+        <img src="/myblog/icons/forward.svg" class="book-icon" alt="Forward" />
+      </a>
+    
+    </span>
+  </div>
+  
+
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#一前期调研输入阶段">一、前期调研（输入阶段）</a>
+      <ul>
+        <li><a href="#1-搜索意图与用户画像">1. 搜索意图与用户画像</a></li>
+        <li><a href="#2-学习该话题所有知识点">2. 学习该话题所有知识点</a></li>
+      </ul>
+    </li>
+    <li><a href="#二内容策划结构阶段">二、内容策划（结构阶段）</a>
+      <ul>
+        <li><a href="#3-策划文章结构">3. 策划文章结构</a></li>
+        <li><a href="#4-策划文章标题">4. 策划文章标题</a></li>
+        <li><a href="#5-规划文章内容元素">5. 规划文章内容元素</a></li>
+        <li><a href="#6-竞品内容分析">6. 竞品内容分析</a></li>
+        <li><a href="#7-生成文章大纲升级版">7. 生成文章大纲（升级版）</a></li>
+      </ul>
+    </li>
+    <li><a href="#三内容写作输出阶段">三、内容写作（输出阶段）</a>
+      <ul>
+        <li><a href="#8-写文章开头极其重要">8. 写文章开头（极其重要）</a></li>
+        <li><a href="#9-写文章正文">9. 写文章正文</a></li>
+        <li><a href="#10-写faq10个以上">10. 写FAQ（10个以上）</a></li>
+        <li><a href="#11-写结尾final-thoughts">11. 写结尾（Final Thoughts）</a></li>
+      </ul>
+    </li>
+    <li><a href="#四seo优化强化阶段">四、SEO优化（强化阶段）</a>
+      <ul>
+        <li><a href="#12-布局长尾关键词">12. 布局长尾关键词</a></li>
+        <li><a href="#13-提升文章专业度与ai可见性">13. 提升文章专业度与AI可见性</a></li>
+        <li><a href="#14-内部链接布局">14. 内部链接布局</a></li>
+      </ul>
+    </li>
+    <li><a href="#五发布与优化落地阶段">五、发布与优化（落地阶段）</a>
+      <ul>
+        <li><a href="#15-wordpress发布">15. WordPress发布</a></li>
+        <li><a href="#16-配图与视觉优化">16. 配图与视觉优化</a></li>
+        <li><a href="#17-外链与权威性">17. 外链与权威性</a></li>
+        <li><a href="#18-发布前检查checklist">18. 发布前检查（Checklist）</a></li>
+      </ul>
+    </li>
+    <li><a href="#六最终目标">六、最终目标</a></li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
