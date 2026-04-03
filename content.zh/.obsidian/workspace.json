@@ -11,10 +11,14 @@
             "id": "e2c0003fd0d8521c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "docs/数字营销.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "数字营销"
             }
           }
         ]
@@ -181,23 +185,27 @@
   },
   "active": "e2c0003fd0d8521c",
   "lastOpenFiles": [
-    "docs/独立站基础知识/产品页面大纲的写作步骤.md",
+    "docs/软件工具.md",
+    "docs/数字营销/数字媒体.md",
     "docs/独立站基础知识.md",
+    "docs/计算机知识.md",
+    "docs/数字营销.md",
+    "docs/数字营销/营销技术.md",
     "_index.md",
+    "docs/数字营销",
+    "未命名",
+    "-",
+    "docs/独立站基础知识/产品页面大纲的写作步骤.md",
     "docs/独立站基础知识/文章页优化大纲.md",
     "docs/Obsidian + Hugo + GithubPages 本地部署完整教程.md",
     "docs/读书笔记/纳瓦尔宝典.md",
-    "docs/数字营销.md",
     "docs/读书笔记/定投十年财务自由.md",
     "docs/读书笔记.md",
     "docs/如何自己能独立完成一个网站.md",
-    "docs/软件工具.md",
     "docs/独立站基础知识",
-    "未命名",
     "docs/SEO 与 SEM：有什么区别？.md",
     "docs/Semrush如何使用.md",
     "docs/读书笔记",
-    "docs/计算机知识.md",
     "docs/Git使用指南.md",
     "docs/读书笔记",
     "Pasted image 20260323164551.png",
