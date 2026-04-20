@@ -4,67 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "549ca9055a6f0f02",
+        "id": "df6977968d1294db",
         "type": "tabs",
         "children": [
           {
-            "id": "15539e6a78bbd391",
+            "id": "68f032740afbba81",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/独立站基础知识/产品页面大纲的写作步骤.md",
+                "file": "docs/Semrush如何使用.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "产品页面大纲的写作步骤"
-            }
-          },
-          {
-            "id": "6d61db94505c952e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/seo网站优化.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "seo网站优化"
-            }
-          },
-          {
-            "id": "3c17dd9b1aa222c6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/如何导出老网站所有页面.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "如何导出老网站所有页面"
-            }
-          },
-          {
-            "id": "858002ebc76ca268",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/独立站基础知识.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "独立站基础知识"
+              "title": "Semrush如何使用"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -226,12 +183,14 @@
       "bases:新建数据库": false
     }
   },
-  "active": "858002ebc76ca268",
+  "active": "68f032740afbba81",
   "lastOpenFiles": [
+    "docs/seo网站优化.md",
+    "_index.md",
+    "docs/老网站常见问题盘点.md",
+    "docs/独立站基础知识.md",
     "docs/读书笔记.md",
     "docs/计算机知识.md",
-    "_index.md",
-    "docs/独立站基础知识.md",
     "docs/数字营销.md",
     "docs/如何自己能独立完成一个网站.md",
     "docs/软件工具.md",
@@ -242,9 +201,7 @@
     "docs/Obsidian + Hugo + GithubPages 本地部署完整教程.md",
     "docs/数字营销/数字媒体.md",
     "docs/数字营销/营销技术.md",
-    "docs/老网站常见问题盘点.md",
     "docs/如何导出老网站所有页面.md",
-    "docs/seo网站优化.md",
     "docs/独立站基础知识/产品页面大纲的写作步骤.md",
     "docs/独立站基础知识/SEO与SEM有什么区别.md",
     "docs/读书笔记/定投十年财务自由.md",
