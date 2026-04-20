@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head><script src="/myblog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=myblog/livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="谷歌站长→站点地图→打开站点地图 例如：https://westshorefurniture.com/post-sitemap.xml
+import xml.etree.ElementTree as ET import pandas as pd import re input_file = &#39;post-sitemap.xml&#39; output_file = &#39;pure_english_keywords.xlsx&#39; def is_foreign_language(url): &#34;&#34;&#34; 判断是否为小语种 URL。 如果域名后面紧跟着 2 个字母的路径（如 /ko/ 或 /ja/），则判定为非英文。 &#34;&#34;&#34; pattern = r&#39;https?://[^/]&#43;/([a-z]{2})(/|$)&#39; match = re.search(pattern, url) if match: return True return False def extract_keyword(url): path = url.strip(&#39;/&#39;).split(&#39;/&#39;)[-1] # 过滤编码后的乱码关键词 if &#39;%&#39; in path: return &#34;Unknown Keyword&#34; keyword = path.replace(&#39;-&#39;, &#39; &#39;).title() return keyword def process_sitemap(): try: tree = ET.parse(input_file) root = tree.getroot() namespace = {&#39;ns&#39;: &#39;http://www.sitemaps.org/schemas/sitemap/0.9&#39;} data = [] for loc in root.findall(&#39;.//ns:loc&#39;, namespace): url = loc.text if url: if not is_foreign_language(url): keyword = extract_keyword(url) # 排除首页 if keyword and &#39;Westshorefurniture&#39; not in keyword: data.append({ &#39;Keyword&#39;: keyword, &#39;URL&#39;: url }) df = pd.DataFrame(data) # 再次过滤乱码关键词 df = df[df[&#39;Keyword&#39;] != &#34;Unknown Keyword&#34;] df.to_excel(output_file, index=False) print(&#34;筛选完成，已剔除所有小语种目录&#34;) print(f&#34;最终保留英文条数: {len(df)}&#34;) except Exception as e: print(f&#34;发生错误: {e}&#34;) if __name__ == &#34;__main__&#34;: process_sitemap()">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2e3440">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/myblog/docs/%E5%A6%82%E4%BD%95%E5%AF%BC%E5%87%BA%E8%80%81%E7%BD%91%E7%AB%99%E6%89%80%E6%9C%89%E9%A1%B5%E9%9D%A2/">
+  <meta property="og:site_name" content="qwamv的个人博客">
+  <meta property="og:title" content="qwamv的个人博客">
+  <meta property="og:description" content="谷歌站长→站点地图→打开站点地图 例如：https://westshorefurniture.com/post-sitemap.xml
+import xml.etree.ElementTree as ET import pandas as pd import re input_file = &#39;post-sitemap.xml&#39; output_file = &#39;pure_english_keywords.xlsx&#39; def is_foreign_language(url): &#34;&#34;&#34; 判断是否为小语种 URL。 如果域名后面紧跟着 2 个字母的路径（如 /ko/ 或 /ja/），则判定为非英文。 &#34;&#34;&#34; pattern = r&#39;https?://[^/]&#43;/([a-z]{2})(/|$)&#39; match = re.search(pattern, url) if match: return True return False def extract_keyword(url): path = url.strip(&#39;/&#39;).split(&#39;/&#39;)[-1] # 过滤编码后的乱码关键词 if &#39;%&#39; in path: return &#34;Unknown Keyword&#34; keyword = path.replace(&#39;-&#39;, &#39; &#39;).title() return keyword def process_sitemap(): try: tree = ET.parse(input_file) root = tree.getroot() namespace = {&#39;ns&#39;: &#39;http://www.sitemaps.org/schemas/sitemap/0.9&#39;} data = [] for loc in root.findall(&#39;.//ns:loc&#39;, namespace): url = loc.text if url: if not is_foreign_language(url): keyword = extract_keyword(url) # 排除首页 if keyword and &#39;Westshorefurniture&#39; not in keyword: data.append({ &#39;Keyword&#39;: keyword, &#39;URL&#39;: url }) df = pd.DataFrame(data) # 再次过滤乱码关键词 df = df[df[&#39;Keyword&#39;] != &#34;Unknown Keyword&#34;] df.to_excel(output_file, index=False) print(&#34;筛选完成，已剔除所有小语种目录&#34;) print(f&#34;最终保留英文条数: {len(df)}&#34;) except Exception as e: print(f&#34;发生错误: {e}&#34;) if __name__ == &#34;__main__&#34;: process_sitemap()">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+
+
+  <meta itemprop="name" content="qwamv的个人博客">
+  <meta itemprop="description" content="谷歌站长→站点地图→打开站点地图 例如：https://westshorefurniture.com/post-sitemap.xml
+import xml.etree.ElementTree as ET import pandas as pd import re input_file = &#39;post-sitemap.xml&#39; output_file = &#39;pure_english_keywords.xlsx&#39; def is_foreign_language(url): &#34;&#34;&#34; 判断是否为小语种 URL。 如果域名后面紧跟着 2 个字母的路径（如 /ko/ 或 /ja/），则判定为非英文。 &#34;&#34;&#34; pattern = r&#39;https?://[^/]&#43;/([a-z]{2})(/|$)&#39; match = re.search(pattern, url) if match: return True return False def extract_keyword(url): path = url.strip(&#39;/&#39;).split(&#39;/&#39;)[-1] # 过滤编码后的乱码关键词 if &#39;%&#39; in path: return &#34;Unknown Keyword&#34; keyword = path.replace(&#39;-&#39;, &#39; &#39;).title() return keyword def process_sitemap(): try: tree = ET.parse(input_file) root = tree.getroot() namespace = {&#39;ns&#39;: &#39;http://www.sitemaps.org/schemas/sitemap/0.9&#39;} data = [] for loc in root.findall(&#39;.//ns:loc&#39;, namespace): url = loc.text if url: if not is_foreign_language(url): keyword = extract_keyword(url) # 排除首页 if keyword and &#39;Westshorefurniture&#39; not in keyword: data.append({ &#39;Keyword&#39;: keyword, &#39;URL&#39;: url }) df = pd.DataFrame(data) # 再次过滤乱码关键词 df = df[df[&#39;Keyword&#39;] != &#34;Unknown Keyword&#34;] df.to_excel(output_file, index=False) print(&#34;筛选完成，已剔除所有小语种目录&#34;) print(f&#34;最终保留英文条数: {len(df)}&#34;) except Exception as e: print(f&#34;发生错误: {e}&#34;) if __name__ == &#34;__main__&#34;: process_sitemap()">
+  <meta itemprop="wordCount" content="138">
+
+<title>如何导出老网站所有页面 | qwamv的个人博客</title>
+<link rel="icon" href="/myblog/favicon.png" >
+<link rel="manifest" href="/myblog/manifest.json">
+<link rel="canonical" href="http://localhost:1313/myblog/docs/%E5%A6%82%E4%BD%95%E5%AF%BC%E5%87%BA%E8%80%81%E7%BD%91%E7%AB%99%E6%89%80%E6%9C%89%E9%A1%B5%E9%9D%A2/">
+<link rel="stylesheet" href="/myblog/book.min.4d6d5ad3b0ae85d2a15b20ab217863f70db543e46314629e239ced759e674898.css" integrity="sha256-TW1a07CuhdKhWyCrIXhj9w21Q&#43;RjFGKeI5ztdZ5nSJg=" crossorigin="anonymous">
+
+
+  <script defer src="/myblog/fuse.min.js"></script>
+  <script defer src="/myblog/zh.search.min.c689b3be8d76ef385d788ac31d2cf7252ce5d4ce245591bb3b13fa43280ea4a0.js" integrity="sha256-xomzvo127zhdeIrDHSz3JSzl1M4kVZG7OxP6QygOpKA=" crossorigin="anonymous"></script>
+
+
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/myblog/"><span>qwamv的个人博客</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="搜索"
+    aria-label="搜索"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/git%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" class="">
+      Git使用指南</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/obsidian-&#43;-hugo-&#43;-githubpages-%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%E5%AE%8C%E6%95%B4%E6%95%99%E7%A8%8B/" class="">
+      Obsidian Hugo Github Pages 本地部署完整教程</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/page%E5%92%8Cpost%E7%9A%84%E5%8C%BA%E5%88%AB/" class="">
+      Page和 Post的区别</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/semrush%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8/" class="">
+      Semrush如何使用</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/seo%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96/" class="">
+      Seo网站优化</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/%E5%A4%96%E9%93%BE%E6%8B%92%E7%BB%9D%E5%B7%A5%E5%85%B7/" class="">
+      外链拒绝工具</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/%E5%A6%82%E4%BD%95%E5%AF%BC%E5%87%BA%E8%80%81%E7%BD%91%E7%AB%99%E6%89%80%E6%9C%89%E9%A1%B5%E9%9D%A2/" class="active">
+      如何导出老网站所有页面</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/%E5%A6%82%E4%BD%95%E8%87%AA%E5%B7%B1%E8%83%BD%E7%8B%AC%E7%AB%8B%E5%AE%8C%E6%88%90%E4%B8%80%E4%B8%AA%E7%BD%91%E7%AB%99/" class="">
+      如何自己能独立完成一个网站</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/%E6%95%B0%E5%AD%97%E8%90%A5%E9%94%80/" class="">
+      数字营销</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/%E6%95%B0%E5%AD%97%E8%90%A5%E9%94%80/%E6%95%B0%E5%AD%97%E5%AA%92%E4%BD%93/" class="">
+      数字媒体</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/%E6%95%B0%E5%AD%97%E8%90%A5%E9%94%80/%E8%90%A5%E9%94%80%E6%8A%80%E6%9C%AF/" class="">
+      营销技术</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/%E7%8B%AC%E7%AB%8B%E7%AB%99%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" class="">
+      独立站基础知识</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/%E7%8B%AC%E7%AB%8B%E7%AB%99%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/seo-%E4%B8%8E-sem%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB/" class="">
+      Seo 与 Sem有什么区别</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/%E7%8B%AC%E7%AB%8B%E7%AB%99%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E4%BA%A7%E5%93%81%E9%A1%B5%E9%9D%A2%E5%A4%A7%E7%BA%B2%E7%9A%84%E5%86%99%E4%BD%9C%E6%AD%A5%E9%AA%A4/" class="">
+      产品页面大纲的写作步骤</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/%E7%8B%AC%E7%AB%8B%E7%AB%99%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E6%96%87%E7%AB%A0%E9%A1%B5%E4%BC%98%E5%8C%96%E5%A4%A7%E7%BA%B2/" class="">
+      文章页优化大纲</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/" class="">
+      计算机知识</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" class="">
+      读书笔记</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E5%AE%9A%E6%8A%95%E5%8D%81%E5%B9%B4%E8%B4%A2%E5%8A%A1%E8%87%AA%E7%94%B1/" class="">
+      定投十年财务自由</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/myblog/docs/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%BA%B3%E7%93%A6%E5%B0%94%E5%AE%9D%E5%85%B8/" class="">
+      纳瓦尔宝典</a>
+  
+
+        </li>
+      
+    
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/myblog/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>如何导出老网站所有页面</h3>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><p>谷歌站长→站点地图→打开站点地图
+<!-- raw HTML omitted --></p>
+<p>例如：https://westshorefurniture.com/post-sitemap.xml</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> xml.etree.ElementTree <span style="color:#66d9ef">as</span> ET
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> re
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>input_file <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;post-sitemap.xml&#39;</span>
+</span></span><span style="display:flex;"><span>output_file <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;pure_english_keywords.xlsx&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">is_foreign_language</span>(url):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    判断是否为小语种 URL。
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    如果域名后面紧跟着 2 个字母的路径（如 /ko/ 或 /ja/），则判定为非英文。
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    pattern <span style="color:#f92672">=</span> <span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;https?://[^/]+/([a-z]</span><span style="color:#e6db74">{2}</span><span style="color:#e6db74">)(/|$)&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">match</span> <span style="color:#f92672">=</span> re<span style="color:#f92672">.</span>search(pattern, url)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">match</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">extract_keyword</span>(url):
+</span></span><span style="display:flex;"><span>    path <span style="color:#f92672">=</span> url<span style="color:#f92672">.</span>strip(<span style="color:#e6db74">&#39;/&#39;</span>)<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#39;/&#39;</span>)[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 过滤编码后的乱码关键词</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#39;%&#39;</span> <span style="color:#f92672">in</span> path:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Unknown Keyword&#34;</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    keyword <span style="color:#f92672">=</span> path<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#39;-&#39;</span>, <span style="color:#e6db74">&#39; &#39;</span>)<span style="color:#f92672">.</span>title()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> keyword
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">process_sitemap</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>        tree <span style="color:#f92672">=</span> ET<span style="color:#f92672">.</span>parse(input_file)
+</span></span><span style="display:flex;"><span>        root <span style="color:#f92672">=</span> tree<span style="color:#f92672">.</span>getroot()
+</span></span><span style="display:flex;"><span>        namespace <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;ns&#39;</span>: <span style="color:#e6db74">&#39;http://www.sitemaps.org/schemas/sitemap/0.9&#39;</span>}
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        data <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> loc <span style="color:#f92672">in</span> root<span style="color:#f92672">.</span>findall(<span style="color:#e6db74">&#39;.//ns:loc&#39;</span>, namespace):
+</span></span><span style="display:flex;"><span>            url <span style="color:#f92672">=</span> loc<span style="color:#f92672">.</span>text
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> url:
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> is_foreign_language(url):
+</span></span><span style="display:flex;"><span>                    keyword <span style="color:#f92672">=</span> extract_keyword(url)
+</span></span><span style="display:flex;"><span>                    
+</span></span><span style="display:flex;"><span>                    <span style="color:#75715e"># 排除首页</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">if</span> keyword <span style="color:#f92672">and</span> <span style="color:#e6db74">&#39;Westshorefurniture&#39;</span> <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> keyword:
+</span></span><span style="display:flex;"><span>                        data<span style="color:#f92672">.</span>append({
+</span></span><span style="display:flex;"><span>                            <span style="color:#e6db74">&#39;Keyword&#39;</span>: keyword,
+</span></span><span style="display:flex;"><span>                            <span style="color:#e6db74">&#39;URL&#39;</span>: url
+</span></span><span style="display:flex;"><span>                        })
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(data)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 再次过滤乱码关键词</span>
+</span></span><span style="display:flex;"><span>        df <span style="color:#f92672">=</span> df[df[<span style="color:#e6db74">&#39;Keyword&#39;</span>] <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;Unknown Keyword&#34;</span>]
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        df<span style="color:#f92672">.</span>to_excel(output_file, index<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;筛选完成，已剔除所有小语种目录&#34;</span>)
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;最终保留英文条数: </span><span style="color:#e6db74">{</span>len(df)<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;发生错误: </span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+</span></span><span style="display:flex;"><span>    process_sitemap()</span></span></code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+<div>
+
+</div>
+
+<div>
+
+</div>
+
+</div>
+
+
+
+
+
+  
+  
+  
+  <div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/myblog/docs/%E5%A4%96%E9%93%BE%E6%8B%92%E7%BB%9D%E5%B7%A5%E5%85%B7/" class="flex align-center">
+        <img src="/myblog/icons/backward.svg" class="book-icon" alt="Backward" />
+        <span>外链拒绝工具</span>
+      </a>
+    
+    </span>
+    <span>
+    
+      <a href="/myblog/docs/%E5%A6%82%E4%BD%95%E8%87%AA%E5%B7%B1%E8%83%BD%E7%8B%AC%E7%AB%8B%E5%AE%8C%E6%88%90%E4%B8%80%E4%B8%AA%E7%BD%91%E7%AB%99/" class="flex align-center">
+        <span>如何自己能独立完成一个网站</span>
+        <img src="/myblog/icons/forward.svg" class="book-icon" alt="Forward" />
+      </a>
+    
+    </span>
+  </div>
+  
+
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -8,84 +8,39 @@ https://github.com/alex-shpak/hugo-book
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="🧱 1. 安装 PowerShell 7（pwsh）#✅ 推荐方式（winget）#打开终端（Win &#43; X → Terminal）
-执行：
-winget install –id Microsoft.PowerShell –source winget
-安装完成后重启终端 🚀 2. 打开 PowerShell 7#方法：
-Win 键搜索 PowerShell 7
-或 Win &#43; R 输入 pwsh
-验证：
-$PSVersionTable.PSVersion
-Major = 7 即成功
-⚙️ 3. 安装 Hugo#下载：
-https://github.com/gohugoio/hugo/releases
-步骤：
-下载 hugo_extended_xxx_windows-amd64.zip
-解压得到 hugo.exe
-放入 C:\hugo\
-添加到 PATH
-验证：
-hugo version
-🏗️ 4. 初始化 Hugo 站点#cd D:\blog\
-hugo new site myblog
+<meta name="description" content="优化步骤#1.盘点网站所有页面 2.系统筛选产品词&#43;信息词并拆出未布局关键词 3.重复策划产品集合页模版 4.系统布局外链
+1.盘点网站所有页面#-如何导出老网站所有页面 -如何系统检查页面出词情况 -老网站SEO常见问题及解决方案 -如何检查页面关键词蚕食情况 -如何优化没有出词或者出词很少的老页面
+2.系统筛选产品词&#43;信息词并拆出未布局关键词#学习关键词篇，并分出未布局关键词
+3.重复策划产品集合页模版#学习产品页写作篇
+4.系统布局外链#学习外链篇
 ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2e3440">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/myblog/docs/obsidian-&#43;-hugo-&#43;-githubpages-%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%E5%AE%8C%E6%95%B4%E6%95%99%E7%A8%8B/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/myblog/docs/seo%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96/">
   <meta property="og:site_name" content="qwamv的个人博客">
   <meta property="og:title" content="qwamv的个人博客">
-  <meta property="og:description" content="🧱 1. 安装 PowerShell 7（pwsh）#✅ 推荐方式（winget）#打开终端（Win &#43; X → Terminal）
-执行：
-winget install –id Microsoft.PowerShell –source winget
-安装完成后重启终端 🚀 2. 打开 PowerShell 7#方法：
-Win 键搜索 PowerShell 7
-或 Win &#43; R 输入 pwsh
-验证：
-$PSVersionTable.PSVersion
-Major = 7 即成功
-⚙️ 3. 安装 Hugo#下载：
-https://github.com/gohugoio/hugo/releases
-步骤：
-下载 hugo_extended_xxx_windows-amd64.zip
-解压得到 hugo.exe
-放入 C:\hugo\
-添加到 PATH
-验证：
-hugo version
-🏗️ 4. 初始化 Hugo 站点#cd D:\blog\
-hugo new site myblog">
+  <meta property="og:description" content="优化步骤#1.盘点网站所有页面 2.系统筛选产品词&#43;信息词并拆出未布局关键词 3.重复策划产品集合页模版 4.系统布局外链
+1.盘点网站所有页面#-如何导出老网站所有页面 -如何系统检查页面出词情况 -老网站SEO常见问题及解决方案 -如何检查页面关键词蚕食情况 -如何优化没有出词或者出词很少的老页面
+2.系统筛选产品词&#43;信息词并拆出未布局关键词#学习关键词篇，并分出未布局关键词
+3.重复策划产品集合页模版#学习产品页写作篇
+4.系统布局外链#学习外链篇">
   <meta property="og:locale" content="zh">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
 
 
   <meta itemprop="name" content="qwamv的个人博客">
-  <meta itemprop="description" content="🧱 1. 安装 PowerShell 7（pwsh）#✅ 推荐方式（winget）#打开终端（Win &#43; X → Terminal）
-执行：
-winget install –id Microsoft.PowerShell –source winget
-安装完成后重启终端 🚀 2. 打开 PowerShell 7#方法：
-Win 键搜索 PowerShell 7
-或 Win &#43; R 输入 pwsh
-验证：
-$PSVersionTable.PSVersion
-Major = 7 即成功
-⚙️ 3. 安装 Hugo#下载：
-https://github.com/gohugoio/hugo/releases
-步骤：
-下载 hugo_extended_xxx_windows-amd64.zip
-解压得到 hugo.exe
-放入 C:\hugo\
-添加到 PATH
-验证：
-hugo version
-🏗️ 4. 初始化 Hugo 站点#cd D:\blog\
-hugo new site myblog">
-  <meta itemprop="wordCount" content="154">
+  <meta itemprop="description" content="优化步骤#1.盘点网站所有页面 2.系统筛选产品词&#43;信息词并拆出未布局关键词 3.重复策划产品集合页模版 4.系统布局外链
+1.盘点网站所有页面#-如何导出老网站所有页面 -如何系统检查页面出词情况 -老网站SEO常见问题及解决方案 -如何检查页面关键词蚕食情况 -如何优化没有出词或者出词很少的老页面
+2.系统筛选产品词&#43;信息词并拆出未布局关键词#学习关键词篇，并分出未布局关键词
+3.重复策划产品集合页模版#学习产品页写作篇
+4.系统布局外链#学习外链篇">
+  <meta itemprop="wordCount" content="17">
 
-<title>Obsidian Hugo Github Pages 本地部署完整教程 | qwamv的个人博客</title>
+<title>Seo网站优化 | qwamv的个人博客</title>
 <link rel="icon" href="/myblog/favicon.png" >
 <link rel="manifest" href="/myblog/manifest.json">
-<link rel="canonical" href="http://localhost:1313/myblog/docs/obsidian-&#43;-hugo-&#43;-githubpages-%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%E5%AE%8C%E6%95%B4%E6%95%99%E7%A8%8B/">
+<link rel="canonical" href="http://localhost:1313/myblog/docs/seo%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96/">
 <link rel="stylesheet" href="/myblog/book.min.4d6d5ad3b0ae85d2a15b20ab217863f70db543e46314629e239ced759e674898.css" integrity="sha256-TW1a07CuhdKhWyCrIXhj9w21Q&#43;RjFGKeI5ztdZ5nSJg=" crossorigin="anonymous">
 
 
@@ -157,7 +112,7 @@ hugo new site myblog">
   
 
   
-    <a href="/myblog/docs/obsidian-&#43;-hugo-&#43;-githubpages-%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%E5%AE%8C%E6%95%B4%E6%95%99%E7%A8%8B/" class="active">
+    <a href="/myblog/docs/obsidian-&#43;-hugo-&#43;-githubpages-%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%E5%AE%8C%E6%95%B4%E6%95%99%E7%A8%8B/" class="">
       Obsidian Hugo Github Pages 本地部署完整教程</a>
   
 
@@ -199,7 +154,7 @@ hugo new site myblog">
   
 
   
-    <a href="/myblog/docs/seo%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96/" class="">
+    <a href="/myblog/docs/seo%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96/" class="active">
       Seo网站优化</a>
   
 
@@ -439,7 +394,7 @@ hugo new site myblog">
     <img src="/myblog/icons/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <h3>Obsidian Hugo Github Pages 本地部署完整教程</h3>
+  <h3>Seo网站优化</h3>
 
   <label for="toc-control">
     
@@ -455,19 +410,11 @@ hugo new site myblog">
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#-1-安装-powershell-7pwsh">🧱 1. 安装 PowerShell 7（pwsh）</a>
-      <ul>
-        <li><a href="#-推荐方式winget">✅ 推荐方式（winget）</a></li>
-      </ul>
-    </li>
-    <li><a href="#-2-打开-powershell-7">🚀 2. 打开 PowerShell 7</a></li>
-    <li><a href="#-3-安装-hugo">⚙️ 3. 安装 Hugo</a></li>
-    <li><a href="#-4-初始化-hugo-站点">🏗️ 4. 初始化 Hugo 站点</a></li>
-    <li><a href="#-5-安装主题hugo-book">🎨 5. 安装主题（hugo-book）</a></li>
-    <li><a href="#-6-本地运行">🌐 6. 本地运行</a></li>
-    <li><a href="#-7-obsidian-联动">🧠 7. Obsidian 联动</a></li>
-    <li><a href="#-8-git-推送">📤 8. Git 推送</a></li>
-    <li><a href="#-总流程">✅ 总流程</a></li>
+    <li><a href="#优化步骤">优化步骤</a></li>
+    <li><a href="#1盘点网站所有页面">1.盘点网站所有页面</a></li>
+    <li><a href="#2系统筛选产品词信息词并拆出未布局关键词">2.系统筛选产品词+信息词并拆出未布局关键词</a></li>
+    <li><a href="#3重复策划产品集合页模版">3.重复策划产品集合页模版</a></li>
+    <li><a href="#4系统布局外链">4.系统布局外链</a></li>
   </ul>
 </nav>
 
@@ -480,124 +427,23 @@ hugo new site myblog">
 
       
       
-  <article class="markdown book-article"><h2 id="-1-安装-powershell-7pwsh">🧱 1. 安装 PowerShell 7（pwsh）<a class="anchor" href="#-1-%e5%ae%89%e8%a3%85-powershell-7pwsh">#</a></h2>
-<h3 id="-推荐方式winget">✅ 推荐方式（winget）<a class="anchor" href="#-%e6%8e%a8%e8%8d%90%e6%96%b9%e5%bc%8fwinget">#</a></h3>
-<ol>
-<li>
-<p>打开终端（Win + X → Terminal）</p>
-</li>
-<li>
-<p>执行：</p>
-</li>
-</ol>
-<p>winget install &ndash;id Microsoft.PowerShell &ndash;source winget</p>
-<ol start="3">
-<li>安装完成后重启终端</li>
-</ol>
-<hr>
-<h2 id="-2-打开-powershell-7">🚀 2. 打开 PowerShell 7<a class="anchor" href="#-2-%e6%89%93%e5%bc%80-powershell-7">#</a></h2>
-<p>方法：</p>
-<ul>
-<li>
-<p>Win 键搜索 PowerShell 7</p>
-</li>
-<li>
-<p>或 Win + R 输入 pwsh</p>
-</li>
-</ul>
-<p>验证：</p>
-<p>$PSVersionTable.PSVersion</p>
-<p>Major = 7 即成功</p>
-<hr>
-<h2 id="-3-安装-hugo">⚙️ 3. 安装 Hugo<a class="anchor" href="#-3-%e5%ae%89%e8%a3%85-hugo">#</a></h2>
-<p>下载：</p>
-<p><a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a></p>
-<p>步骤：</p>
-<ol>
-<li>
-<p>下载 hugo_extended_xxx_windows-amd64.zip</p>
-</li>
-<li>
-<p>解压得到 hugo.exe</p>
-</li>
-<li>
-<p>放入 C:\hugo\</p>
-</li>
-<li>
-<p>添加到 PATH</p>
-</li>
-</ol>
-<p>验证：</p>
-<p>hugo version</p>
-<hr>
-<h2 id="-4-初始化-hugo-站点">🏗️ 4. 初始化 Hugo 站点<a class="anchor" href="#-4-%e5%88%9d%e5%a7%8b%e5%8c%96-hugo-%e7%ab%99%e7%82%b9">#</a></h2>
-<p>cd D:\blog\</p>
-<p>hugo new site myblog</p>
-<p>cd myblog</p>
-<p>目录说明：</p>
-<ul>
-<li>
-<p>hugo.toml 配置文件</p>
-</li>
-<li>
-<p>content 文章目录</p>
-</li>
-<li>
-<p>themes 主题目录</p>
-</li>
-</ul>
-<hr>
-<h2 id="-5-安装主题hugo-book">🎨 5. 安装主题（hugo-book）<a class="anchor" href="#-5-%e5%ae%89%e8%a3%85%e4%b8%bb%e9%a2%98hugo-book">#</a></h2>
-<p>git clone <a href="https://github.com/alex-shpak/hugo-book">https://github.com/alex-shpak/hugo-book</a> themes/hugo-book</p>
-<p>编辑 hugo.toml：</p>
-<p>theme = &ldquo;hugo-book&rdquo;</p>
-<hr>
-<h2 id="-6-本地运行">🌐 6. 本地运行<a class="anchor" href="#-6-%e6%9c%ac%e5%9c%b0%e8%bf%90%e8%a1%8c">#</a></h2>
-<p>cd D:\blog\myblog</p>
-<p>hugo server -D</p>
-<p>访问：</p>
-<p>http://localhost:1313/</p>
-<hr>
-<h2 id="-7-obsidian-联动">🧠 7. Obsidian 联动<a class="anchor" href="#-7-obsidian-%e8%81%94%e5%8a%a8">#</a></h2>
-<p>打开 Vault：</p>
-<p>D:\blog\myblog\</p>
-<p>在 content 下写文章：</p>
-<hr>
-<p>title: &ldquo;My First Post&rdquo;</p>
-<p>date: 2026-03-23</p>
-<hr>
-<p>Hello Hugo + Obsidian 🚀</p>
-<hr>
-<h2 id="-8-git-推送">📤 8. Git 推送<a class="anchor" href="#-8-git-%e6%8e%a8%e9%80%81">#</a></h2>
-<p>cd D:\blog\myblog</p>
-<p>git add .</p>
-<p>git commit -m &ldquo;update content&rdquo;</p>
-<p>git push origin main</p>
-<hr>
-<h2 id="-总流程">✅ 总流程<a class="anchor" href="#-%e6%80%bb%e6%b5%81%e7%a8%8b">#</a></h2>
-<ol>
-<li>
-<p>安装 PowerShell</p>
-</li>
-<li>
-<p>安装 Hugo</p>
-</li>
-<li>
-<p>创建站点</p>
-</li>
-<li>
-<p>安装主题</p>
-</li>
-<li>
-<p>用 Obsidian 写内容</p>
-</li>
-<li>
-<p>本地预览</p>
-</li>
-<li>
-<p>推送上线</p>
-</li>
-</ol>
+  <article class="markdown book-article"><h2 id="优化步骤">优化步骤<a class="anchor" href="#%e4%bc%98%e5%8c%96%e6%ad%a5%e9%aa%a4">#</a></h2>
+<p>1.盘点网站所有页面
+2.系统筛选产品词+信息词并拆出未布局关键词
+3.重复策划产品集合页模版
+4.系统布局外链</p>
+<h2 id="1盘点网站所有页面">1.盘点网站所有页面<a class="anchor" href="#1%e7%9b%98%e7%82%b9%e7%bd%91%e7%ab%99%e6%89%80%e6%9c%89%e9%a1%b5%e9%9d%a2">#</a></h2>
+<p>-如何导出老网站所有页面
+-如何系统检查页面出词情况
+-老网站SEO常见问题及解决方案
+-如何检查页面关键词蚕食情况
+-如何优化没有出词或者出词很少的老页面</p>
+<h2 id="2系统筛选产品词信息词并拆出未布局关键词">2.系统筛选产品词+信息词并拆出未布局关键词<a class="anchor" href="#2%e7%b3%bb%e7%bb%9f%e7%ad%9b%e9%80%89%e4%ba%a7%e5%93%81%e8%af%8d%e4%bf%a1%e6%81%af%e8%af%8d%e5%b9%b6%e6%8b%86%e5%87%ba%e6%9c%aa%e5%b8%83%e5%b1%80%e5%85%b3%e9%94%ae%e8%af%8d">#</a></h2>
+<p>学习关键词篇，并分出未布局关键词</p>
+<h2 id="3重复策划产品集合页模版">3.重复策划产品集合页模版<a class="anchor" href="#3%e9%87%8d%e5%a4%8d%e7%ad%96%e5%88%92%e4%ba%a7%e5%93%81%e9%9b%86%e5%90%88%e9%a1%b5%e6%a8%a1%e7%89%88">#</a></h2>
+<p>学习产品页写作篇</p>
+<h2 id="4系统布局外链">4.系统布局外链<a class="anchor" href="#4%e7%b3%bb%e7%bb%9f%e5%b8%83%e5%b1%80%e5%a4%96%e9%93%be">#</a></h2>
+<p>学习外链篇</p>
 </article>
  
       
@@ -626,16 +472,16 @@ hugo new site myblog">
   <div class="flex flex-wrap justify-between">
     <span>
     
-      <a href="/myblog/docs/git%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" class="flex align-center">
+      <a href="/myblog/docs/semrush%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8/" class="flex align-center">
         <img src="/myblog/icons/backward.svg" class="book-icon" alt="Backward" />
-        <span>Git使用指南</span>
+        <span>Semrush如何使用</span>
       </a>
     
     </span>
     <span>
     
-      <a href="/myblog/docs/page%E5%92%8Cpost%E7%9A%84%E5%8C%BA%E5%88%AB/" class="flex align-center">
-        <span>Page和 Post的区别</span>
+      <a href="/myblog/docs/%E5%A4%96%E9%93%BE%E6%8B%92%E7%BB%9D%E5%B7%A5%E5%85%B7/" class="flex align-center">
+        <span>外链拒绝工具</span>
         <img src="/myblog/icons/forward.svg" class="book-icon" alt="Forward" />
       </a>
     
@@ -675,19 +521,11 @@ hugo new site myblog">
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#-1-安装-powershell-7pwsh">🧱 1. 安装 PowerShell 7（pwsh）</a>
-      <ul>
-        <li><a href="#-推荐方式winget">✅ 推荐方式（winget）</a></li>
-      </ul>
-    </li>
-    <li><a href="#-2-打开-powershell-7">🚀 2. 打开 PowerShell 7</a></li>
-    <li><a href="#-3-安装-hugo">⚙️ 3. 安装 Hugo</a></li>
-    <li><a href="#-4-初始化-hugo-站点">🏗️ 4. 初始化 Hugo 站点</a></li>
-    <li><a href="#-5-安装主题hugo-book">🎨 5. 安装主题（hugo-book）</a></li>
-    <li><a href="#-6-本地运行">🌐 6. 本地运行</a></li>
-    <li><a href="#-7-obsidian-联动">🧠 7. Obsidian 联动</a></li>
-    <li><a href="#-8-git-推送">📤 8. Git 推送</a></li>
-    <li><a href="#-总流程">✅ 总流程</a></li>
+    <li><a href="#优化步骤">优化步骤</a></li>
+    <li><a href="#1盘点网站所有页面">1.盘点网站所有页面</a></li>
+    <li><a href="#2系统筛选产品词信息词并拆出未布局关键词">2.系统筛选产品词+信息词并拆出未布局关键词</a></li>
+    <li><a href="#3重复策划产品集合页模版">3.重复策划产品集合页模版</a></li>
+    <li><a href="#4系统布局外链">4.系统布局外链</a></li>
   </ul>
 </nav>
 
